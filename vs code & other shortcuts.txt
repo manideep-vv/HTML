@@ -1,0 +1,9 @@
+delete a line -- ctrl shift k
+duplicate a line -- shift+alt+ up arrow or down arrow
+to move line up and down -- alt+ any arrow
+create a new current line below by pushing current line below- ctrl + shift +enter
+
+
+chrome shortcuts
+=====================
+1) to open debugger tools press - C+shift+I or F12
