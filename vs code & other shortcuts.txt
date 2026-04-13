@@ -1,9 +1,32 @@
-delete a line -- ctrl shift k
-duplicate a line -- shift+alt+ up arrow or down arrow
-to move line up and down -- alt+ any arrow
+
+line
+----
 create a new current line below by pushing current line below- ctrl + shift +enter
+to create a new line in current line and move the current line downwards - shift+enter
 
 
+duplicate a line/ copy the current line to down  - -- shift+alt+ up arrow or down arrow
+
+
+Move line up and down -- alt+ any arrow
+refactor variable name- F2
+
+
+
+delete a line -- ctrl shift k
+
+ 
+
+
+
+to search in all files- ctrl+shift+F
+
+
+format :- alt + Shift+ F (to format current file)
+vertical select- alt+shift
+
+to insert emoji in vs code:- windows+. (dot )
 chrome shortcuts
 =====================
 1) to open debugger tools press - C+shift+I or F12
+2) to write in chrome console - ctrl+back tick // ctrl+` 
