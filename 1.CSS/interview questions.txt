@@ -1,0 +1,18 @@
+gradients, flexbox (centering the text),shadows, selectors
+write text,background with gradient colors, choose gradient background with radial, linear, repeating-radial-gradient 
+css positioning
+applyying tranformations with transitions,delay using translateX() , translateY() right side and left side horizontal movement
+like translating(moving sideways, vertically up and down),rotating, scaling- increasing height,width, skew(slanting)
+using google fonts with effects
+using animations
+
+using flexbox,grid
+
+
+
+ javascript
+ ------------------
+ 1) auto fill the values for all text boxes- on button click- use js setAttribute()function to set values
+ ex- on clicking a button called "auto fill" all the details must be auto entered in text boxes automatically
+ 1) attach a js event listener for an element onmouseenter a funcion must be run
+ after running that function - that function should autofill every thing by using ele.addAttribute("value","actual val")

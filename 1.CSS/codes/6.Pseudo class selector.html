@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<style>
+    /* 'link' is a psuedo class selector - by default link means it will be in unvisited state*/
+        a:link{
+            color: hotpink;
+            font-size: xx-large;
+        }
+        /* 'Visited' is another pseudo class means we already clicked that anchor link */
+        a:visited{
+                color: yellowgreen;
+        }
+        /* 'active' is another pseudo class when we click link for that sec that will be in active state */
+        a:active{
+            color: tomato;
+        }
+
+        /* 'hover' is another pseudo class selector   */
+        #p1:hover{
+            color: violet;
+            background-color: aliceblue;
+            font-size: xx-large;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        /* Target is an another pseudo class, this will be active when anchor tag reached that state */
+        #end:target{
+            background-color: darkorange;
+        }
+        /* focus is a another psuedo class when u click on text box it will hover */
+        #uid:focus{
+            background-color: darkorange;
+            color: whitesmoke;
+            box-sizing: border-box;
+        }
+        /* invalid is a pseudo class when validation failed this class will come into exist */
+        #uid:invalid{
+            background-color: olivedrab
+        }
+        /* if input tag contains disabled then this psuedo clas will be applied */
+        #disa:disabled{
+            background-color: crimson;
+        }
+        /* if input tag contains required then it is called mandatory tag */
+        #eid:required{
+            background-color: tomato;
+        }
+        /* if required tag is not there then it is called optional */
+        #add:optional{
+            background-color: yellow;
+        }
+        /* checked is an another pseudo class this will be active when it is checked that checked beside label will be selected */
+        input:checked{
+            background-color: black;
+        }
+        /* here + means immediate sibling */
+        input:checked + label{
+            /* background-color: darkviolet; */
+            font-style: italic;
+            font-size: xx-large;
+        }
+        /* means if paragraph is the first child of any div tag or body tag then apply this properties*/
+        p:first-child{
+                background-color: palegreen;
+                font-size: xx-large;
+        }
+        /* If input tag is the 2nd child of any div tag or any tag then apply these properties */
+        input:nth-child(3){
+            background-color: plum;
+        }
+        /* apply this properties for the input tag first of its type  */
+        input:first-of-type{
+            background-color: yellowgreen;
+        }
+        /* apply this property for last paragraph */
+        p:last-of-type{
+            background-color:violet
+        }
+            /* apply these properties if achor tag is the last child of any tag even body tag */
+        div:last-child{
+            background-color: crimson;
+        }
+
+</style>
+<body>
+    //Here this p is the first child then apply these properties
+    <div>olammo</div>
+    <label for="uid">userid </label>
+    <input type="text" id="uid" name="userid"  minlength="5">
+    <input type="text" id="disa" name="userid " disabled> <br>
+    
+    <label for="eid" >email</label> <input type="email" id="eid" name="email" required> <br>
+    <label for="add"> address</label> <input type="address" id="add" name="address" >
+    
+    
+    <div>
+        <p>orayya</p>
+        <input type="checkbox" id="c1"> <label for="c1">Java</label>
+        <input type="checkbox" id="c2"> <label for="c2">Angular</label>
+        <input type="checkbox" id="c3"> <label for="c3">React Js</label>
+
+    </div>
+    
+
+    <h3 class="greener">tcs is in all countries</h3>
+    <a id="start1" href="https://www.google.com" target="_blank">Go to google</a>
+    <a id="start" href="#end">Go to end</a>
+    <p id="p1">
+        Orey charan ga exams ki baga chaduvu ra leka pothe mukku pindestha
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius consequuntur vel dolorum distinctio et. Inventore, rem labore consectetur delectus provident nisi assumenda, a optio itaque error, facere asperiores facilis aspernatur!
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius consequuntur vel dolorum distinctio et. Inventore, rem labore consectetur delectus provident nisi assumenda, a optio itaque error, facere asperiores facilis aspernatur!
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius consequuntur vel dolorum distinctio et. Inventore, rem labore consectetur delectus provident nisi assumenda, a optio itaque error, facere asperiores facilis aspernatur!
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius consequuntur vel dolorum distinctio et. Inventore, rem labore consectetur delectus provident nisi assumenda, a optio itaque error, facere asperiores facilis aspernatur!
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius consequuntur vel dolorum distinctio et. Inventore, rem labore consectetur delectus provident nisi assumenda, a optio itaque error, facere asperiores facilis aspernatur!
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius consequuntur vel dolorum distinctio et. Inventore, rem labore consectetur delectus provident nisi assumenda, a optio itaque error, facere asperiores facilis aspernatur!
+    </p>
+    <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore accusantium nisi nam asperiores maxime dolorum blanditiis libero doloremque quisquam! Consectetur reprehenderit ipsum nisi blanditiis porro. Dolorem dolorum enim placeat illum?
+        Dicta ullam praesentium perferendis quis quae quisquam, obcaecati magnam sint aperiam fugiat temporibus, blanditiis similique! Sapiente, voluptate. Illum, placeat porro vel optio architecto mollitia illo sequi sint quis cupiditate minima.
+        A modi doloremque ea. Doloribus corporis architecto, officia magnam beatae alias quasi qui debitis? Iusto dignissimos repudiandae illo magni optio vero sequi expedita, voluptas maiores error facilis, libero tempora. Quis!
+    </p>
+    
+    <!-- <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br> -->
+   
+  
+    <p id="end" >
+       Last Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius consequuntur vel dolorum distinctio et. Inventore, rem labore consectetur delectus provident nisi assumenda, a optio itaque error, facere asperiores facilis aspernatur!
+    </p>
+    <a   href="#start">goto start</a>
+   <div> abbba rey</div>
+</body>
+</html>

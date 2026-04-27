@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flex-box-Align content</title>
+  </head>
+  <style>
+    .parent {
+      border: 2px solid aqua;
+      width: 80vw;
+      height: 80vh;
+      margin: 20px;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      align-content: space-around;
+      /* Bec of this vertical space 
+      is from between each elment 
+      is even/same*/
+    }
+    .child {
+      width: 150px;
+      height: 150px;
+      border: 3px dashed coral;
+      margin: 2px;
+    }
+    .c1 {
+      background-color: greenyellow;
+    }
+    .c2 {
+      background-color: gold;
+    }
+    .c3 {
+      background-color: violet;
+    }
+  </style>
+  <body>
+    <div class="parent">
+      <div class="c1 child">Charan</div>
+      <div class="c2 child">is</div>
+      <div class="c3 child">a</div>
+      <div class="c1 child">good</div>
+      <div class="c2 child">boy</div>
+      <div class="c3 child">&</div>
+      <div class="c1 child">He</div>
+      <div class="c2 child">goes to</div>
+      <div class="c3 child">College</div>
+      <div class="c1 child">everyday</div>
+    </div>
+  </body>
+</html>

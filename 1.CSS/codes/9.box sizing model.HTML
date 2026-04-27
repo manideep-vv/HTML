@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    html {
+      font-size: 20px;
+    }
+    #bb {
+      background-color: yellowgreen;
+      font-size: 2rem;
+      /* by default 1 rem root ele font = 16px
+      so here final font size will be taken as  =32 px */
+      width: 400px;
+      height: 100px;
+      /* as current font size =32px then width here is 320px */
+      box-sizing: border-box;
+      padding: 10px;
+      border: 15px dashed darkgoldenrod;
+    }
+    #cb {
+      box-sizing: content-box;
+      font-size: 2rem;
+      background-color: #40d3ba;
+      width: 400px;
+      padding: 10px;
+      border: 20px dashed rgb(44, 83, 202);
+      height: 100px;
+    }
+    #px320 {
+      background-color: pink;
+      width: 400px;
+    }
+  </style>
+  <body>
+    <div id="bb">Charan is lazy fellow</div>
+    <div id="px320">Santhoshi is lazy fellow 400px</div>
+    <div id="cb">Prakash is hard worker</div>
+  </body>
+</html>

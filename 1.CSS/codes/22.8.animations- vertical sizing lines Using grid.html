@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #maincontainer {
+        background-color: rgb(247, 230, 133);
+        height: 90vh;
+        border: 3px dashed tomato;
+        /* To bring any ele vertically , horizontally center */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      #i1 {
+        display: grid;
+        grid-template-columns: 30px 30px 30px 30px;
+        /* border: 2px dashed; */
+      }
+
+      #i1 > div {
+        width: 5px;
+        height: 100px;
+        background-color: coral;
+        margin: 2px;
+      }
+      #l1 {
+        animation: lineAni 1s linear 0.4s 30;
+      }
+      .l2 {
+        animation: lineAni 1s linear 0.1s 30;
+      }
+      .l3 {
+        animation: lineAni 1s linear 0.4s 30;
+      }
+      .l4 {
+        animation: lineAni 1s linear 0.1s 30;
+      }
+      @keyframes lineAni {
+        0% {
+          height: 10px;
+        }
+        50% {
+          height: 100px;
+        }
+        100% {
+          height: 20px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="maincontainer">
+      <div id="i1">
+        <div id="l1"></div>
+        <div class="l2"></div>
+        <div class="l3"></div>
+        <div class="l4"></div>
+      </div>
+    </div>
+  </body>
+</html>

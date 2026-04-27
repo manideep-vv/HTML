@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid area</title>
+    <style>
+      #parent {
+        display: grid;
+        background-color: lightsalmon;
+        height: 80vh;
+        /* justify-content: start;
+            justify-content: center; */
+        /* align-content: start;
+            align-content: center; */
+        align-content: start;
+        /* justify-content: center; */
+        /* justify-items: center; means ele will be verically compressed*/
+        /* justify-items: center; */
+        align-items: end;
+
+        /* justify-items: start;
+            justify-items: center;
+            justify-items: end; */
+        /* Bec of this each column size will be 100px */
+        grid-template-columns: 100px 100px 100px;
+        /* Bec of this each row size will be 50px */
+        grid-template-rows: 100px 50px 50px auto;
+        /* grid-template-areas: "child1 child1 child1", ""; */
+        gap: 1cap;
+        /* The below is like layout */
+        grid-template-areas:
+          "one one one"
+          "two three four"
+          "two three four"
+          "five five five";
+      }
+
+      .child {
+        border: 3px dashed saddlebrown;
+      }
+
+      .two {
+        grid-area: two;
+      }
+
+      .three {
+        grid-area: three;
+      }
+
+      .four {
+        grid-area: four;
+      }
+
+      .five {
+        grid-area: five;
+      }
+
+      .one {
+        grid-area: one;
+      }
+
+      #parent > div:nth-child(even) {
+        background-color: greenyellow;
+      }
+
+      #parent > div:nth-child(odd) {
+        background-color: rgb(206, 46, 206);
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="parent">
+      <div class="one child">one</div>
+      <div class="two child">two</div>
+      <div class="three child">three</div>
+      <div class="four child">four</div>
+      <div class="five child">five</div>
+      <div class="six child">six</div>
+      <div class="seven child">seven</div>
+      <div class="eight child">eight</div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+<style>
+    /* This = is called exact match  */
+/* syntax is tag[attribute=value] */
+            input[type="text"]{
+                    background-color: yellowgreen;
+            }
+            
+    /* This = is called exact match  */
+    input[type="email"]{
+        background-color: teal;
+    }
+
+    /* This is demo for start with attribute -- */
+    p[title^="tata"]{
+        color: yellowgreen;
+        font-size: larger;
+    }
+    /* This is demo for contains attribute */
+    h2[title*="technology"]{
+        background-color: darkorange;
+    }
+
+</style>
+</head>
+<body>
+    enter ur user name <input type="text"> <br>
+    enter ur password <input type="email"> <br>
+    
+    <p title="tata consultancy services">tcs is leader in gen ai</p>
+    <p title="tataconsultancy services">tcs is leader in gen ai</p>
+    <p title="tataconsultancyservices">tcs is leader in gen ai</p>
+
+    <h2 title="cognizant technology solutions"> CTS</h2>
+    <h2 title="cognizanttechnologysolutions"> CTS</h2>
+    <h2 title="cognizant technology solutions"> CTS</h2>
+</body>
+</html>
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid examples</title>
+    <style>
+        #parent {
+            display: grid;
+            grid-template-columns: 200px 200px 200px;
+            column-gap: 2cap;
+        }
+
+        .child {
+            border: 3px dashed;
+        }
+
+        .three .four {
+            /* grid-row-start: 1;
+            grid-row-end: 3; */
+            grid-row: 1/4;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="parent">
+        <div class="child one">
+            <img src="https://nageswaraayurvedic.com/wp-content/uploads/2024/06/Group-95.png" alt="Brain">
+            <div>Brain C</div>
+        </div>
+        <div class="child two">
+            <img src="https://nageswaraayurvedic.com/wp-content/uploads/2024/06/Group-100.png" alt="Kdiney C">
+            <div>Kdiney C</div>
+        </div>
+        <div class="child three">
+            <img src="https://nageswaraayurvedic.com/wp-content/uploads/2024/06/Group-98.png" alt="Throat C">
+            <div>Throat C</div>
+        </div>
+
+        <div class="child four">
+            <img src="https://nageswaraayurvedic.com/wp-content/uploads/2024/06/Group-121.png" alt="Eye C">
+            <div>Eye C</div>
+        </div>
+        <div class="child five">
+            <img src="https://nageswaraayurvedic.com/wp-content/uploads/2024/06/Group-110.png" alt="Blood">
+            <div>Blood</div>
+        </div>
+        <div class="child six">
+            <img src="https://nageswaraayurvedic.com/wp-content/uploads/2024/06/Group-103.png" alt="Neck">
+            <div>Neck</div>
+        </div>
+
+
+
+    </div>
+
+</body>
+
+</html>

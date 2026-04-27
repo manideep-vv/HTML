@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>flex-box-child properties</title>
+    <style>
+      .parent {
+        border: 3px dashed goldenrod;
+        display: flex;
+        flex-direction: row;
+      }
+      .child {
+        background-color: burlywood;
+        border: 3px solid turquoise;
+
+        padding: 15px;
+        width: 500px;
+      }
+
+      .c1 {
+        background-color: cornflowerblue;
+        order: -1;
+        /* Bec of order blue ele came 1st */
+        flex-shrink: 30;
+        /* Bec of shrink these ele shrinked */
+      }
+      .c2 {
+        background-color: yellowgreen;
+        order: 3;
+      }
+      .c3 {
+        background-color: orange;
+        order: 2;
+        flex-grow: 200;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parent">
+      <div class="c1 child">DELL</div>
+      <div class="c2 child">HP</div>
+      <div class="c3 child">LENOVO</div>
+      <div class="c1 child">Logitech</div>
+      <div class="c2 child">Asus</div>
+      <div class="c3 child">Miwi</div>
+      <div class="c1 child">Redmi</div>
+      <div class="c2 child">Samsung</div>
+      <div class="c3 child">Oneplus</div>
+      <div class="c1 child">Redmi</div>
+      <div class="c2 child">Samsung</div>
+      <div class="c3 child">Oneplus</div>
+    </div>
+  </body>
+</html>

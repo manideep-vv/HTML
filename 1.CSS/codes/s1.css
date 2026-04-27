@@ -1,0 +1,24 @@
+p{
+	background-color: slateblue;
+    color: aliceblue;
+}
+
+h1{
+    background-color: peru;
+    color: papayawhip;
+}
+
+
+//for fonts use these classes
+
+font-family: 'Lobster', cursive;
+// this pacific is like  comic sans
+font-family: 'Pacifico', cursive; 
+font-family: 'Playfair Display', serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Open Sans', sans-serif;
+
+body {
+  font-family: 'Poppins', sans-serif;
+}

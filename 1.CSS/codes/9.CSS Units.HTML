@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    #parent {
+      background-color: antiquewhite;
+      height: 800px;
+      width: 400px;
+    }
+    #i1 {
+      background-color: aqua;
+      height: 10vh;
+      /* Here i1 height will be 10% of screen height*/
+      width: 90vw;
+      /* Here i1 width will be 90% of screen width */
+    }
+    #i2 {
+      background-color: sienna;
+      height: 60vh;
+      /* Here i2 height will 60% of screen height*/
+      width: 10vw;
+      /* Here i2 width will 10% of screen width*/
+    }
+    #i3 {
+      width: 90vw;
+      height: 80vh;
+    }
+    html {
+      font-size: 20px;
+      /* This is the root element font  */
+    }
+    #rootEleFontDemo {
+      width: 20rem;
+      /* Here this width will vary depending upon root element font */
+      /* 20rem=20*20=400px will the width */
+      /* width: 400px; */
+      background-color: peru;
+    }
+    #px400 {
+      background-color: darkorchid;
+      width: 400px;
+    }
+    #currentEleFontDemo {
+      background-color: palegreen;
+      font-size: 30px;
+      width: 20em;
+      /* Here this width will vary depending upon current ele font */
+    }
+  </style>
+  <body>
+    <img id="i3" src="images/3.pexels-photo-460672.jpeg" alt="london bridge" />
+    <h2 id="parent">
+      <div id="i1">TCS is safe workplace</div>
+      <div id="i2">Infosys too</div>
+    </h2>
+    <div id="rootEleFontDemo">
+      This div width varies on root element font =20rem =20*20px=400px width
+    </div>
+    <div id="px400">This div is 400px</div>
+    <div id="currentEleFontDemo">
+      This div width varies on current element font =20rem =20*20px=400px width
+    </div>
+  </body>
+</html>

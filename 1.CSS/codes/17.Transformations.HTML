@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Transformations</title>
+    <style>
+      div {
+        width: 100px;
+        height: 100px;
+      }
+      #one {
+        background-color: violet;
+        transition: all 1s;
+        /* Bec of this transformation will happen in 4s */
+        padding: 50px 50px;
+        border: 2px dashed;
+        margin: 100px;
+        box-sizing: border-box;
+        /* With this transition all
+         transformations will be applied slowly */
+      }
+      #one:hover {
+        transform: translateY(-2000px);
+        /* transform: translateX(200px);
+            transform: translateX(-2000px);
+                    transform: translateX(80%);
+ */
+      }
+      #two {
+        background-color: coral;
+        margin: 50px;
+      }
+      #two:hover {
+        /* transform: scale(2); */
+        /* transform: scaleX(2); */
+        /* transform: scaleY(2); */
+        transform: scale(2, 3);
+      }
+      #three {
+        background-color: greenyellow;
+        margin: 50px;
+      }
+      #three:hover {
+        transform: rotate(45deg);
+        /* transform: rotateX(45deg); 
+         transform: rotateY(85deg); */
+      }
+      #four {
+        margin: 100px;
+        background-color: rgb(224, 59, 100);
+        transition: all 1s;
+      }
+      #four:hover {
+        transform: skewY(24deg);
+        /* it went vertically down side */
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="one"></div>
+    <div id="two">scale</div>
+    <div id="three">rotate</div>
+    <div id="four">Charan</div>
+  </body>
+</html>

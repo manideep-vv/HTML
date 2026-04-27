@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animation timing functions</title>
+    <style>
+      .box {
+        width: 200px;
+        height: 100px;
+        background-color: rgb(243, 110, 110);
+        text-align: center;
+        padding-top: 5vw;
+        box-sizing: border-box;
+        border: 2px dashed black;
+        margin-top: 50px;
+        font-size: 50px;
+        animation-duration: 5s;
+      }
+      #b1 {
+        animation-name: b1;
+        animation-iteration-count: 3;
+      }
+      #b2 {
+        background-color: rgb(223, 243, 110);
+        /* animation-name: b2;
+        animation-iteration-count: 3;
+        animation-timing-function: ease-out;
+        animation-fill-mode: forwards;
+        animation-direction: alternate; */
+        /* below is the shorthand operator  */
+        animation: b2 5s ease-out 10 reverse forwards running;
+      }
+
+      @keyframes b1 {
+        from {
+          transform: translateX(10%);
+        }
+        to {
+          transform: translateX(1000%);
+        }
+      }
+      @keyframes b2 {
+        from {
+          transform: translateX(10%);
+        }
+        to {
+          transform: translateX(1000%);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="b1" class="box">Prakash</div>
+    <div id="b2" class="box">Inverters</div>
+  </body>
+</html>

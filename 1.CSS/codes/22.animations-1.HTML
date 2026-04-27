@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Animations</title>
+    <style>
+      #parent {
+        display: flex;
+        flex-direction: row;
+      }
+      #parent > div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      #box {
+        background-color: rgb(150, 150, 150);
+        width: 100px;
+        height: 100px;
+        font-size: 5vw;
+        animation-name: circle;
+        animation-duration: 1s;
+        /* count is how many times u want to see animation */
+        animation-iteration-count: 30;
+        animation-delay: 3s;
+        animation-direction: alternate;
+      }
+
+      @keyframes circle {
+        /* From will be the initial state */
+        from {
+          width: 300px;
+          height: 300px;
+          background-color: coral;
+        }
+        /* To is the final animation state */
+        to {
+          border-radius: 50%;
+          width: 100px;
+          height: 100px;
+          background-color: yellowgreen;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="parent">
+      <div id="box">S</div>
+      <div id="box">A</div>
+      <div id="box">N</div>
+      <div id="box">T</div>
+      <div id="box">U</div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Google</title>
+    <style>
+      .parent {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-content: center;
+        /* Bec of flex-end hori ele were moved to center */
+        width: 75vw;
+        height: 75vh;
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+        font-size: 7vw;
+        background-color: rgb(236, 85, 161);
+        border: solid 3px rgb(138, 127, 209);
+      }
+      .child {
+        border: 4px dashed;
+        margin: 2px;
+
+        /*Bec of flex-start this div is moved to vertical middle */
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="parent">
+      <div class="child">Google</div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        /* here we are using tag selector */
+        h2::before{
+            content: "hello ap bye bye ycp";
+            color: chocolate;
+            font-size: xx-large;
+        }
+        /* here we are using id selector */
+        #tcs::after{
+            content: "jai TDP";
+            color: goldenrod;
+            font-size: xx-large;
+        }
+        /* here . means we are using class selector */
+        .greener::first-letter{
+                font-size: xx-large;
+                color: yellowgreen;
+        }
+        /* here i have used combinator selector  */
+        div > p::selection{
+            color: yellowgreen;
+            background-color: darkgrey;
+        }
+
+    </style>
+</head>
+<body>
+    <h2>tcs is having wf projects</h2>
+    <div>
+        <h2>synergy park</h2>
+    </div>
+    <h3 class="greener">tcs is in all countries</h3>
+    <h4  class="greener">wells fargo in in u.s.a</h4>
+    <h3 id="tcs">tcs is in india and usa also</h3>
+    <h3 id="tcs">tcs is in india and usa also</h3>
+    <h4  class="greener">sf is in illinois</h4>
+
+    <p class="greener">i cant take extra load</p>
+    <p >i dont want lead position</p>
+    <div>
+        <p >i want </p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transitions</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Rancho&effect=fire-animation"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Rancho&effect=neon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Rancho&effect=fire"
+    />
+
+    <style>
+      #heading {
+        height: 10vh;
+        border: 3px dashed;
+        background-color: aqua;
+        transition: all 6s;
+      }
+      .big {
+        font-size: 40px;
+      }
+      #main {
+        padding-left: 40vw;
+        font-size: 30px;
+      }
+      #caption {
+        padding-left: 45vw;
+      }
+
+      #one {
+        background-color: sandybrown;
+        height: 100px;
+        width: 100px;
+        transition: width 4s ease-in, height 1s ease-out;
+      }
+      #two {
+        background-color: violet;
+        height: 100px;
+        width: 100px;
+        transition: all 4s ease-in;
+      }
+      #heading:hover {
+        height: 12vh;
+        background-color: chartreuse;
+        /* background: linear-gradient(
+          to right,
+          rgb(20, 141, 240),
+          rgb(248, 244, 30),
+          rgb(12, 226, 101)
+        ); */
+      }
+      #one:hover,
+      #two:hover {
+        height: 200px;
+        width: 200px;
+
+        background-color: rgb(192, 233, 12);
+      }
+      #p1 {
+        display: flex;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="heading">
+      <div id="main" class="font-effect-fire-animation">
+        Prakash Inverter Solution's
+      </div>
+      <div id="caption">
+        Any Inverter, Any problem One solution ~~It's Prakash Inverters
+      </div>
+    </div>
+    <div id="p1">
+      <div id="c1">
+        <div class="font-effect-fire big">Service Engineer -Prakash</div>
+        <img src="images/prakash.PNG" alt="" />
+      </div>
+      <div id="c2 ">
+        <div class="font-effect-neon big">All Inverter repairs done here</div>
+        <img src="images/su-kam.PNG" alt="pic" height="400px" width="600px" />
+      </div>
+      <div>
+        <div class="font-effect-neon">
+          Contact us at <br />
+          Prakash Mansion, chirala, opp Bapanamma Kalyana Mandapam
+        </div>
+        <img src="images/chirala house.PNG" alt="" />
+      </div>
+    </div>
+
+    <div id="one"></div>
+    <div id="two"></div>
+  </body>
+</html>

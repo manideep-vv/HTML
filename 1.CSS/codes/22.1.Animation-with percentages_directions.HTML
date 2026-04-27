@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animation with Direction & %</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Rancho&effect=fire-animation | neon"
+    />
+
+    <style>
+      #g1 {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        /* To see all ele in same row i placed in grid 
+        where as each ele is a flex box*/
+      }
+
+      #p11 {
+        /*  since all ele needs to be in same row i used flex*/
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        background-color: rgb(221, 135, 104);
+
+        animation-name: fh;
+        animation-duration: 3s;
+        animation-iteration-count: 10;
+        animation-direction: alternate;
+      }
+      #p22 {
+        display: flex;
+        flex-direction: row;
+        background-color: rgb(197, 197, 30);
+        animation-name: sh;
+        animation-duration: 3s;
+        animation-iteration-count: 10;
+        animation-direction: alternate;
+      }
+      /* Animation related properties */
+      @keyframes fh {
+        0% {
+          justify-content: center;
+          height: 10vh;
+          font-size: 2vw;
+        }
+        50% {
+          /* justify-content: center; */
+          /* border-radius: 50%; */
+          /* font-size: 5vw; */
+        }
+        100% {
+          justify-content: flex-end;
+          height: 20vh;
+          font-size: 5vw;
+        }
+      }
+      @keyframes sh {
+        0% {
+          justify-content: center;
+          height: 10vh;
+          font-size: 2vw;
+        }
+        100% {
+          justify-content: flex-start;
+          height: 20vh;
+          font-size: 5vw;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="g1">
+      <div id="p11" class="font-effect-fire-animation">
+        <div id="one">M</div>
+        <div id="two">A</div>
+        <div id="two">N</div>
+        <div id="two">I</div>
+      </div>
+
+      <div id="p22" class="font-effect-fire-animation">
+        <div id="three">S</div>
+        <div id="four">A</div>
+        <div id="four">N</div>
+        <div id="four">T</div>
+        <div id="four">U</div>
+      </div>
+    </div>
+    <div class="p2"></div>
+  </body>
+</html>

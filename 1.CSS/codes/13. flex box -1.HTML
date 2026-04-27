@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .parent {
+        display: flex;
+        flex-direction: column;
+        border: 5px dashed salmon;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        height: 50vh;
+
+        /*This is same like right aligned  */
+      }
+      .child {
+        width: 250px;
+        height: 100px;
+      }
+      .c1 {
+        background-color: aqua;
+      }
+      .c2 {
+        background-color: chartreuse;
+      }
+      .c3 {
+        background-color: coral;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parent">
+      <div class="c1 child">one</div>
+      <div class="c2 child">two</div>
+      <div class="c3 child">three</div>
+      <div class="c1 child">four</div>
+      <div class="c2 child">Five</div>
+      <div class="c3 child">six</div>
+      <!-- <div class="c1 child">seven</div>
+      <div class="c2 child">Eight</div>
+      <div class="c3 child">Nine</div>
+      <div class="c1 child">Ten</div>
+      <div class="c2 child">Eleven</div>
+      <div class="c3 child">twelve</div> -->
+    </div>
+    <table>
+      <tr>
+        <td class="c1 child">1</td>
+        <td class="c2 child">2</td>
+        <td class="c3 child">3</td>
+      </tr>
+      <tr>
+        <td class="c1 child">4</td>
+        <td class="c2 child">5</td>
+        <td class="c3 child">6</td>
+      </tr>
+    </table>
+  </body>
+</html>

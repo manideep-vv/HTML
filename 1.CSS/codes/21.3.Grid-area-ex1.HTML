@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid area</title>
+    <style>
+        #parent {
+            display: grid;
+            /* Bec of this each column size will be 150px */
+            grid-template-columns: 150px 150px 150px;
+            /* Bec of this each row size will be 100px */
+            grid-template-rows: 100px 100px 100px;
+            /* grid-template-areas: "child1 child1 child1", ""; */
+            gap: 1cap;
+        }
+
+        .child {
+            border: 3px dashed saddlebrown;
+        }
+
+        .seven {
+            grid-column: 1/4;
+            /* Bec of this, 7th ele started at col-1, ended in col-4  */
+        }
+
+        #parent>div:nth-child(even) {
+            background-color: greenyellow;
+        }
+
+        #parent>div:nth-child(odd) {
+            background-color: rgb(206, 46, 206);
+        }
+    </style>
+</head>
+
+<body>
+    <div id="parent">
+        <div class="one child">One</div>
+        <div class="two child">two</div>
+        <div class="three child">three</div>
+        <div class="four child">four</div>
+        <div class="five child">five</div>
+        <div class="six child">six</div>
+        <div class="seven child">seven</div>
+        <div class="eight child">eight</div>
+    </div>
+</body>
+
+</html>

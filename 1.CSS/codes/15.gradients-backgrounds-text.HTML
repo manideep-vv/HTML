@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    .one {
+      background: radial-gradient(
+        rgb(169, 228, 53),
+        rgb(59, 191, 231),
+        rgb(228, 53, 135)
+      );
+      height: 200px;
+      width: 200px;
+      padding: 80px 60px;
+      box-sizing: border-box;
+    }
+
+    .two {
+      background: linear-gradient(
+        45deg,
+        rgb(169, 228, 53),
+        rgb(59, 191, 231),
+        rgb(228, 53, 135)
+      );
+      height: 200px;
+      width: 200px;
+      padding: 80px 60px;
+      box-sizing: border-box;
+    }
+
+    .three {
+      background: repeating-radial-gradient(
+        rgb(190, 231, 41) 10%,
+        rgb(225, 59, 231) 20%,
+        #2f5566 20%
+      );
+      height: 200px;
+      width: 200px;
+      padding: 80px 60px;
+      box-sizing: border-box;
+    }
+    .four {
+      background: repeating-linear-gradient(
+        45deg,
+        rgb(169, 228, 53) 10%,
+        rgb(59, 191, 231) 20%,
+        rgb(228, 53, 135) 20%
+      );
+      height: 200px;
+      width: 200px;
+      padding: 80px 60px;
+      box-sizing: border-box;
+    }
+    .five {
+      height: 100px;
+      width: 900px;
+      font-weight: bolder;
+      font-size: 50px;
+      background: linear-gradient(
+        to right,
+        rgb(76, 203, 235),
+        rgb(235, 65, 198),
+        rgb(77, 245, 166),
+        rgb(245, 178, 77)
+      );
+      color: transparent;
+      -webkit-background-clip: text;
+    }
+    #seven {
+      background-color: aqua;
+      transition: all 4s;
+      height: 50px;
+    }
+    #seven:hover {
+      height: 100px;
+      /* here height is applying slowly but gradient col is applying immediately */
+      background: linear-gradient(
+        to right,
+        rgb(89, 235, 76),
+        rgb(238, 25, 238),
+        rgb(245, 178, 77)
+      );
+    }
+  </style>
+  <body>
+    <div id="seven">Mani</div>
+    <div class="one">Manideep</div>
+    <div class="two">Santhoshi</div>
+    <div class="three">Charan</div>
+    <div class="four">SAI prakasham</div>
+    <div class="five">Orey Mohan Ga</div>
+  </body>
+</html>

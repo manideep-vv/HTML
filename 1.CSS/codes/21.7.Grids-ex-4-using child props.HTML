@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid with many small layouts</title>
+    <style>
+      #parent {
+        display: grid;
+        gap: 10px;
+        grid-template-columns: 10vw 10vw 10vw 10vw;
+        grid-template-rows: 10vh 10vh 10vh 10vh 10vh;
+
+        border: 2px dashed;
+      }
+      #header {
+        grid-column: 1/5;
+      }
+      #main {
+        grid-row: 3/4;
+        grid-column: 1/4;
+      }
+      #rightsidebar {
+        grid-row: 2/4;
+      }
+      #parent > div {
+        background-color: rgb(72, 230, 235);
+        /* To make every ele content hor & ver 
+        center make every ele as flexbox parent */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      #footer {
+        grid-column: 1/5;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="parent">
+      <div id="header" class="child">Header</div>
+
+      <div id="sb1" class="child">smallbox</div>
+      <div id="sb2" class="child">smallbox</div>
+      <div id="sb3" class="child">smallbox</div>
+      <div id="rightsidebar" class="child">Sidebar</div>
+      <div id="main" class="child">Main content</div>
+
+      <div id="footer" class="child">Footer</div>
+    </div>
+  </body>
+</html>

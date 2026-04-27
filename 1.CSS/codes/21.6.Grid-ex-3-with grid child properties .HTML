@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid with header footer</title>
+    <style>
+      #parent {
+        display: grid;
+        background-color: rgba(226, 74, 99, 0.37);
+        grid-template-columns: 10vw 30vw 10vw;
+        grid-template-rows: 10vh 30vh 10vh;
+        justify-content: center;
+        gap: 0.2cap;
+      }
+      .child {
+        border: 2px dashed rgb(255, 0, 179);
+      }
+      #header {
+        grid-column: 1/4;
+      }
+      #footer {
+        grid-column: 1/4;
+      }
+      /* To move any item vertically and horizontally center */
+      #parent > div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="parent">
+      <div id="header" class="child">Header</div>
+      <div id="navbar" class="child">Navbar</div>
+      <div id="content" class="child">Content</div>
+      <div id="aside" class="child">Aside</div>
+      <div id="footer" class="child">Footer</div>
+    </div>
+  </body>
+</html>

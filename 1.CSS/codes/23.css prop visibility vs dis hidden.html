@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>display hidden vs vis none</title>
+    <style>
+      div {
+        width: 90vw;
+        height: 20vh;
+      }
+      #d1 {
+        background-color: rgb(162, 238, 76);
+        /* display: block; */
+        /* visibility: visible; */
+      }
+      #d2 {
+        background-color: rgb(76, 219, 238);
+      }
+      #d1:hover {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="d1">i am div-1 using visibility</div>
+    <div id="d2">i am div-2 using display property</div>
+  </body>
+</html>

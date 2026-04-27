@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <style>
+    #navbar {
+      background-color: coral;
+      position: fixed;
+      /* Here for this tag parent is body Hence this tag
+      moved 90px from body top & 50px from left body  */
+    }
+
+    #t2 {
+      background-color: darkmagenta;
+      color: white;
+      top: 200px;
+      height: 500px;
+      left: 50px;
+      position: sticky;
+      /* Here relative means the properties (top) 
+      will be applied from actual position */
+    }
+    #t3 {
+      top: 2000px;
+      height: 30px;
+      background-color: turquoise;
+      position: relative;
+    }
+    body {
+      background-color: antiquewhite;
+    }
+  </style>
+  <body>
+    <h2 id="navbar">
+      <span>Myntra </span>
+      <span>Men </span>
+      <span>Women </span>
+      <span>Kids </span>
+      <span>Home and Living </span>
+      <span>Beauty </span>
+      <span>studio </span>
+    </h2>
+
+    <h3 id="t2">2.See all the images</h3>
+    <h4 id="t3">3.Gents wear</h4>
+  </body>
+</html>

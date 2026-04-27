@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animation with Direction & %</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Rancho&effect=fire-animation | neon"
+    />
+
+    <style>
+      #g1 {
+        display: grid;
+        grid-template-columns: 10% 30% 10%;
+      }
+      #p11 {
+        font-size: 100px;
+        animation-name: fh;
+        animation-duration: 3s;
+        animation-direction: alternate;
+        animation-iteration-count: 10;
+        background-color: rgba(236, 148, 34, 0.89);
+        border: 2px dashed;
+      }
+      #p22 {
+        font-size: 5vw;
+        animation-name: sh;
+        animation-duration: 3s;
+        animation-direction: alternate;
+        animation-iteration-count: 10;
+        background-color: rgb(197, 197, 30);
+        border: 2px dashed;
+      }
+      /* Animation related properties */
+      @keyframes fh {
+        0% {
+          height: 100px;
+          width: 10vw;
+          font-size: 2vw;
+          transform: translateX(1%);
+        }
+
+        100% {
+          height: 20vh;
+          width: 15vw;
+          font-size: 4vw;
+          transform: translateX(200%);
+        }
+      }
+      @keyframes sh {
+        0% {
+          justify-content: center;
+          height: 10vh;
+          width: 20vw;
+          font-size: 2vw;
+          transform: translateX(1%);
+        }
+        100% {
+          justify-content: flex-start;
+          height: 20vh;
+          width: 15vw;
+          font-size: 3vw;
+          transform: translateX(-200%);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="g1">
+      <div id="p11">
+        <div id="one">MANI</div>
+      </div>
+      <div></div>
+      <div id="p22">
+        <div id="three">SANTU</div>
+      </div>
+    </div>
+    <div class="p2"></div>
+  </body>
+</html>

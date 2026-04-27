@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid with header footer</title>
+    <style>
+      #parent {
+        display: grid;
+        background-color: rgb(239, 248, 110);
+        /* grid-template-columns: 50px 50px 50px 50px;
+        grid-template-rows: 50px 50px 50px 50px; */
+        grid-template-columns: 50px 50px 50px 50px;
+        grid-template-rows: 50px 50px 50px 50px;
+        grid-template-areas:
+          "header header header header"
+          "navbar content content aside"
+          "navbar content content aside"
+          "footer footer footer footer ";
+        gap: 1cap;
+        justify-content: start;
+        /* justify-items: center; */
+      }
+      .child {
+        border: 2px dashed orange;
+      }
+      #header {
+        display: flex;
+        align-items: center;
+        grid-area: header;
+        justify-content: center;
+      }
+      #navbar {
+        justify-content: center;
+        align-items: center;
+        grid-area: navbar;
+      }
+      #content {
+        grid-area: content;
+      }
+      #aside {
+        grid-area: aside;
+      }
+      #footer {
+        grid-area: footer;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="parent">
+      <div id="header" class="child">Header</div>
+      <div id="navbar" class="child">Navbar</div>
+      <div id="content" class="child">Content</div>
+      <div id="aside" class="child">Aside</div>
+      <div id="footer" class="child">Footer</div>
+    </div>
+  </body>
+</html>
