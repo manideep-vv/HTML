@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Array with filter , sort</title>
+  </head>
+  <body>
+    <h1>Array with filter & sort</h1>
+    <script>
+      class company {
+        constructor(n, b, c) {
+          this.name = n;
+          this.branches = b;
+          this.city = c;
+        }
+      }
+      let companies = [
+        new company("tcs", 4, "hyd"),
+        new company("tcs", 6, "chn"),
+        new company("infosys", 5, "chn"),
+        new company("wipro", 3, "hyd"),
+        new company("cognizant", 11, "chn"),
+      ];
+      //sort demo - this sort takes a 2 param fun as argument
+      let sorted = companies.sort((p1, p2) => {
+        if (p1.branches > p2.branches) {
+          //if 1st ele is bigger then we are returning +1 indicating to swap - which gives us ascending order
+          return 1;
+        } else {
+          return -1;
+        }
+      });
+      //this filter fun takes 1 param callback func- if it return true ele will be considered else ignored
+      let hydComp = companies.filter((e) => {
+        //this means return true if city is hyd
+        return e.city == "hyd";
+      });
+
+      console.table(sorted);
+      console.table(hydComp);
+
+      //arrow func should have arrow and it shoulnt have fun keyword and fun name
+      let x = (p1, p2) => {
+        return p1 + p2;
+      };
+      console.log("sum cal using arrow func is ", x(5, 6));
+    </script>
+  </body>
+</html>

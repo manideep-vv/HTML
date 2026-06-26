@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Classes in js</title>
+</head>
+
+<body>
+  <h1>Classes in js</h1>
+
+  <script>
+    console.log('test');
+    const acct = {
+      name: 'Manideep',
+      company: 'tcs',
+      client: 'ameriprise'
+    }
+
+    console.log('fetching using dot operator--',acct.name);
+    console.log('fetching using bracket ',acct['name']);
+    const {name, client} =acct ;
+    console.log('ele after destructuring are --',name,"--",client);
+    console.log('using object.keys()to get all keys ',Object.keys(acct))
+    console.log('using object.values',Object.values(acct))
+    console.log('using object.entries')
+    Object.entries(acct).forEach(
+      ([k,v])=>{
+          console.log(`key -- ${k} , value -- ${v}`)
+        }
+    );
+
+  </script>
+</body>
+
+</html>
